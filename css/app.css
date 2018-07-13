@@ -293,7 +293,7 @@ h4 {
 .jumbotron input {
   color: white !important;
   height: 64px !important;
-  margin: 20px 10px !important;
+  margin: 20px 0px !important;
   outline: none !important;
   border-radius: 0 !important;
   background: rgba(255, 255, 255, 0.15) !important;
