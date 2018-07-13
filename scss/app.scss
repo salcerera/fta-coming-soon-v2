@@ -1,0 +1,168 @@
+// Page specific style guide
+
+
+// Tools (components and layouts)
+
+@import "1-tools";
+
+
+// fta custom reset
+
+h1 {
+    font-size: 48px !important;
+    letter-spacing: $fta-letter;
+    font-weight: 400;
+
+    @media (max-width: 800px) {
+        font-size: 30px !important;
+    }
+}
+
+h4 {
+    letter-spacing: $fta-letter;
+    font-size: 18px !important;
+
+    @media (max-width: 700px) {
+        font-size: 14px !important;
+    }
+}
+
+
+.upp {
+    text-transform: uppercase !important;
+}
+
+// Buttons
+
+.btn-primary {
+    background: $fta-orange-light !important;
+    padding: 20px 40px;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.16) !important;
+    border: none !important;
+    outline: none !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important;
+    font-size: 14px !important;
+    font-weight: 500;
+}
+
+.btn:hover {
+    box-shadow: 0px 20px 42px rgba(0,0,0,0.16) !important;
+}
+
+// Cards
+
+
+
+
+
+// Icons
+
+.primary {
+    color: orange !important;
+}
+
+
+// Forms
+
+.jumbotron {
+
+    input {
+        color: white !important;
+        height: 64px !important;
+        margin: 20px 10px !important; 
+        outline: none !important;
+        border-radius: 0 !important;
+        background: rgba(255,255,255,0.15) !important;
+        border: none !important;
+        padding: 10px 30px !important;
+        //border-bottom: solid 2px $fta-orange-light !important;
+
+    }
+    
+    ::placeholder {
+        color: #fff !important;
+    }
+    
+    input:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        box-shadow: 0px 3px 6px rgba(0,0,0,0.07) !important;
+    }
+
+    .btn-container {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        padding: 0px 10px;
+    }
+    
+    .form-container {
+        padding: 10px;
+    }
+}
+// fta cover style
+
+.fta-cover {
+    min-height: 100vh;
+    background: url('../img/hero3.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover;
+    color: #fff;
+}
+
+
+// header style
+.intro {
+    nav {
+        box-shadow: none;
+        padding: 30px;
+    }
+}
+
+
+// main section style
+
+.main {
+    .countdown-container {
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        max-width: 250px;
+        text-align: center;
+        background: rgba(255,255,255,0.15);
+        margin: 0 auto;
+        padding: 0 !important;
+
+        @media (max-width: 600px) {
+            max-height: 120px;
+            max-width: 146px;
+        }
+
+        .countdown {
+            margin: 0 !important; 
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,0.7);
+            font-size: 12px !important;
+        }
+    
+    }
+    
+    .separator {
+        background: rgba(255,255,255,0.25);
+    }
+} 
+
+
+// footer style
+footer {
+    .copyright {
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+}
